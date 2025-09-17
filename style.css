@@ -1,0 +1,282 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+
+}
+html{
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #ECFDF5;
+}
+
+header {
+    position: fixed;
+    display: flex;
+    height: 10vh;
+    width: 100vw;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #ECFDF5;
+
+}
+
+ul {
+    display: flex;
+    gap: 40px;
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.name {
+    margin-left: 100px;
+}
+
+ul li a:hover {
+    color: #11a37f;
+}
+
+.btn {
+    background-color: #10B981;
+    color: #111827;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: 0.3s;
+    margin-right: 100px;
+}
+
+.btn:hover {
+    background-color: #fff;
+    color: #1E3A8A;
+
+}
+
+.Home {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.home-left {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 90vh;
+    width: 40vw;
+    margin: 20px;
+}
+
+.home-left img {
+    width: 350px;
+    border-radius: 50%;
+    border: 4px solid black;
+}
+
+.home-right {
+    display: flex;
+    align-items: center;
+    height: 90vh;
+    width: 60vw;
+    margin: 20px;
+}
+
+.home-content {
+    padding: 30px;
+    width: 40vw;
+}
+
+.home-content h1 {
+    font-size: 60px;
+}
+
+.home-content p {
+    text-align: justify;
+}
+
+.resume {
+
+    background-color: #10B981;
+    color: #111827;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: 0.3s;
+    margin-right: 100px;
+}
+
+.resume:hover {
+    background-color: #fff;
+    color: #1E3A8A;
+}
+
+.heading {
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.heading h1 {
+    font-size: 50px;
+}
+
+.about {
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+}
+
+.about-content {
+    background-color: #14B8A6;
+    padding: 30px;
+    height: 450px;
+    width: 800px;
+    border: 5px solid black;
+    border-radius: 30px;
+    transition: 0.2s;
+}
+
+.about-content:hover {
+    scale: 1.02;
+    color: white;
+}
+
+.services {
+    height: 100vh;
+}
+
+.contact {
+    display: flex;
+    height: 80vh;
+}
+
+.contact-left {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 90vh;
+    width: 50vw;
+}
+
+.contact-right {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 90vh;
+    width: 50vw;
+}
+
+.connect {
+    text-align: justify;
+    width: 450px;
+}
+
+.connect h1 {
+    font-size: 50px;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.social-links img {
+    width: 60px;
+    border-radius: 50%;
+}
+
+.contact-form {
+    height: 400px;
+    width: 300px;
+}
+
+input {
+    border-radius: 5px;
+    padding: 10px;
+    height: 30px;
+    width: 300px;
+    background: none;
+    border: 2px solid black;
+}
+
+
+textarea {
+    height: 100px;
+    width: 300px;
+    padding: 10px;
+    border-radius: 5px;
+    background: none;
+    border: 2px solid black;
+}
+.services{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap:60px;
+}
+
+footer {
+    background-color: #10B981;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.card{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 40px;
+    font-weight: bold;
+    height: 200px;
+    width: 300px;
+    border: 5px solid;
+    border-radius: 30px;
+    background-color: #14B8A6;
+    transition: 0.2s;
+}
+.card:hover{
+    translate: 0px -10px;
+    scale: 1.05;
+    background-color: #10B981;
+    color: white;
+}
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+    header ul {
+        flex-direction: column;
+        margin: 15px 0;
+    }
+    header ul li {
+        margin: 10px 0;
+    }
+    .Home {
+        flex-direction: column;
+    }
+    .contact {
+        flex-direction: column;
+    }
+}
+
