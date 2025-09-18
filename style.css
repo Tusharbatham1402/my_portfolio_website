@@ -260,23 +260,125 @@ footer {
     background-color: #10B981;
     color: white;
 }
+/* 📱 Mobile View */
 @media (max-width: 768px) {
     header {
-        flex-direction: column;
+        flex-direction: row;
+        height: auto;
+        padding: 10px;
+    }
+
+    .name {
+        margin-left: 0;
+        margin-bottom: 10px;
+    }
+
+    ul {
+        flex-direction: row;
+        gap: 20px;
         text-align: center;
     }
-    header ul {
-        flex-direction: column;
-        margin: 15px 0;
-    }
-    header ul li {
+
+    .btn {
         margin: 10px 0;
     }
+
     .Home {
         flex-direction: column;
+        text-align: center;
+        height: auto;
+        padding: 20px;
     }
+
+    .home-left,
+    .home-right {
+        width: 100%;
+        margin: 10px 0;
+        height: auto;
+    }
+
+    .home-left img {
+        margin-top: 10vh;
+        width: 220px;
+    }
+
+    .home-content {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .home-content h1 {
+        font-size: 32px;
+    }
+
+    .heading h1 {
+        font-size: 32px;
+    }
+
+    .about {
+        height: auto;
+        padding: 20px;
+    }
+
+    .about-content {
+        width: 100%;
+        height: auto;
+    }
+
+    .services {
+        height: auto;
+        padding: 20px;
+    }
+
+    .services-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .card {
+        width: 100%;
+        max-width: 280px;
+        margin: 0 auto;
+    }
+
     .contact {
         flex-direction: column;
+        height: auto;
+        padding: 20px;
+    }
+
+    .contact-left,
+    .contact-right {
+        width: 100%;
+        height: auto;
+        margin: 10px 0;
+    }
+
+    .connect {
+        width: 100%;
+    }
+
+    .connect h1 {
+        font-size: 32px;
+        text-align: center;
+    }
+
+    .social-links img {
+        width: 40px;
+    }
+
+    .contact-form {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    footer {
+        flex-direction: column;
+        height: auto;
+        padding: 10px;
+        gap: 10px;
     }
 }
+
+
 
